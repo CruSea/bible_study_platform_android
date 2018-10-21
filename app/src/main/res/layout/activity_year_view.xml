@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minasie.myapplication.YearView">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_margin="16dp"
+        android:paddingLeft="70dp"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text="what/who is the HolySpirit?"/>
+
+    <TextView
+        android:id="@+id/scripture"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text="Verse: Acts 5:3-4"/>
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_below="@+id/scripture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text="Aim of this Study: To Understand the Personality of HolySpirit"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_below="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text="Questions: Answer the following Questions"/>
+
+    <TextView
+        android:id="@+id/qq"
+        android:layout_below="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:text="1. did you know that HolySpirit is a God?
+        2. how the HolySpirit can be God
+        3. did you know that HolySpirit is a God?
+        4. did you know that HolySpirit is a God?"/>
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_below="@+id/qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_gravity="bottom"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text="Remark"/>
+
+
+</RelativeLayout>

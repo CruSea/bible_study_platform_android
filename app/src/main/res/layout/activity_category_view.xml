@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minasie.myapplication.CategoryView">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_margin="16dp"
+        android:paddingLeft="70dp"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="Who / What is the HolySpirit"/>
+
+    <TextView
+        android:id="@+id/verse"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text='Acts 5:3-4'/>
+
+    <TextView
+        android:id="@+id/scripture"
+        android:layout_below="@+id/verse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text='"3 But Peter said, “Ananias, why has xSatan filled your heart to lie yto the Holy Spirit and zto keep back for yourself part of the proceeds of the land?
+         "'/>
+
+    <TextView
+        android:id="@+id/aimt"
+        android:layout_below="@+id/scripture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Aim of this Study:"/>
+
+    <TextView
+        android:id="@+id/aim"
+        android:layout_below="@+id/aimt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text="To Let you know that HolySpirit is God"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_below="@+id/aim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Questions"/>
+
+    <TextView
+        android:id="@+id/qq"
+        android:layout_below="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:layout_marginLeft="20dp"
+        android:text="1 did you know that HolySpirit is God?" />
+
+    <TextView
+        android:id="@+id/q1"
+        android:layout_below="@+id/qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:layout_marginLeft="20dp"
+        android:text="2 did you know that HolySpirit is God?" />
+    <TextView
+        android:id="@+id/q2"
+        android:layout_below="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:layout_marginLeft="20dp"
+        android:text="3 did you know that HolySpirit is God?" />
+    <TextView
+        android:id="@+id/q3"
+        android:layout_below="@+id/q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:layout_marginLeft="20dp"
+        android:text="4 did you know that HolySpirit is God?" />
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_below="@+id/q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_gravity="bottom"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Remark"/>
+
+    <TextView
+        android:id="@+id/reverse"
+        android:layout_below="@+id/remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:layout_marginLeft="20dp"
+        android:text="Verse of the Day: Acts 5:3-4" />
+
+    </RelativeLayout>
+</ScrollView>
