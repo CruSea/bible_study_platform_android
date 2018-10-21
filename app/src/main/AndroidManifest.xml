@@ -27,7 +27,11 @@
         <activity android:name=".Language" />
         <activity android:name=".AmharicBrowseCategory" />
         <activity android:name=".AmharicListOfCategory" />
-        <activity android:name=".AmharicCategoryView"></activity>
+        <activity android:name=".AmharicCategoryView" />
+        <activity android:name=".AfaanOromoBrowse" />
+        <activity android:name=".AfaanOromoListOfCategory" />
+        <activity android:name=".AfaanOromoCategoryView" />
+        <activity android:name=".WeekList"></activity>
     </application>
 
 </manifest>

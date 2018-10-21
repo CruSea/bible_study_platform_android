@@ -29,7 +29,7 @@ public class BrowseByYear extends AppCompatActivity {
         yearLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent result = new Intent(getApplicationContext(), ListOfCategory.class);
+                Intent result = new Intent(getApplicationContext(), WeekList.class);
                 startActivity(result);
             }
         });

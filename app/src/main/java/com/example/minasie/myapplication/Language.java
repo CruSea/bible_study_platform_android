@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class Language extends AppCompatActivity {
 
@@ -18,20 +18,35 @@ public class Language extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_language);
 
-        langLv = (ListView)findViewById(R.id.language);
+        Button amhbutton = (Button) findViewById(R.id.amharic);
+        amhbutton.setOnClickListener(new View.OnClickListener() {
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, langList);
-        langLv.setAdapter(arrayAdapter);
-
-        //set on click for the ListVIew
-        langLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(), "sorry", Toast.LENGTH_SHORT).show();
-                //Intent result = new Intent(getApplicationContext(), ListOfCategory.class);
-                //startActivity(result);
+            public void onClick(View v) {
+                //Toast.makeText(this, "Button Clicked", Toast.LENGTH_LONG).show();
+                Intent result = new Intent(getApplicationContext(), AmharicBrowseCategory.class);
+                startActivity(result);
             }
         });
+
+        Button ormbutton = (Button) findViewById(R.id.afaanoromo);
+        ormbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                //Toast.makeText(this, "Button Clicked", Toast.LENGTH_LONG).show();
+                Intent result1 = new Intent(getApplicationContext(), AfaanOromoBrowse.class);
+                startActivity(result1);
+            }
+        });
+
+        Button eng = (Button) findViewById(R.id.english);
+        eng.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                //Toast.makeText(this, "Button Clicked", Toast.LENGTH_LONG).show();
+                Intent result1 = new Intent(getApplicationContext(), BrowsebyCategory.class);
+                startActivity(result1);
+            }
+        });
+
     }
 }

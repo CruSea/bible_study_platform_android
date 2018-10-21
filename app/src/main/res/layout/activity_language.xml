@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,13 +7,38 @@
     tools:context="com.example.minasie.myapplication.Language"
     >
 
-
-    <ListView
-        android:id="@+id/language"
-        android:layout_width="fill_parent"
+    <Button
+        android:id="@+id/english"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@color/material_blue_grey_800"
-        android:dividerHeight="1dp"
+        android:text="English"
+        android:textSize="20dp"
         />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/amharic"
+        android:layout_below="@+id/english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amharic"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/afaanoromo"
+        android:layout_below="@+id/amharic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afaan Oromo"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/tigring"
+        android:layout_below="@+id/afaanoromo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tigring"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>

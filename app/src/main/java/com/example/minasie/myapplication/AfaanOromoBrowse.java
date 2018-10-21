@@ -8,19 +8,17 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class AmharicBrowseCategory extends AppCompatActivity {
-
+public class AfaanOromoBrowse extends AppCompatActivity {
     //Array of Category
     ListView categoryLv;
-    String[] categoryList = new String[] {"ስለ የእግዚአብሔር መንግሥት የምሥራች", "መጽሐፍ ቅዱስ የእግዚአብሔር ቃል ነውን", "",
-             "መጽሐፍ ቅዱስ የእግዚአብሔርﹳ", "መጽሐፍ ቅዱስ የእግዚአብሔር ቃል ነውን"};
-
+    String[] categoryList = new String[] {"Waa'e Hafuura Qulqulluu", "Waa'e Ayyaana",
+            "Barsiisa Sobaa","Waa'e Hafuura Qulqulluu", "Waa'e Ayyaana", "Barsiisa Sobaa",};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_amharic_browse_category);
+        setContentView(R.layout.activity_afaan_oromo_browse);
 
-        categoryLv = (ListView)findViewById(R.id.amharicCategory);
+        categoryLv = (ListView)findViewById(R.id.oromoCategory);
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, categoryList);
@@ -30,7 +28,7 @@ public class AmharicBrowseCategory extends AppCompatActivity {
         categoryLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent result = new Intent(getApplicationContext(), AmharicListOfCategory.class);
+                Intent result = new Intent(getApplicationContext(), AfaanOromoListOfCategory.class);
                 startActivity(result);
             }
         });
